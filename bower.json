@@ -19,6 +19,7 @@
     "font-awesome": "~4.5.0",
     "angular": "~1.5.2",
     "bootstrap": "~3.3.6",
-    "bootswatch": "~3.3.6"
+    "bootswatch": "~3.3.6",
+    "angular-translate": "~2.11.0"
   }
 }
