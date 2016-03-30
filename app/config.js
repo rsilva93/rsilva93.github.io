@@ -48,7 +48,7 @@
             EXPERIENCE_3_ROLE: 'Desenvolvedor (.NET/C#)',
             EXPERIENCE_4_ROLE: 'Desenvolvedor Full Stack (.NET/C#)',
 
-            SKILLS_TITLE: 'Conhecimento',
+            SKILLS_TITLE: 'Habilidades',
 
             FOOTER_LOCATION: 'Endereço',
             FOOTER_CITY: 'Blumenau / SC',
