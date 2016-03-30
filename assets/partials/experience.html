@@ -1,0 +1,14 @@
+<section id="experience" ng-controller="experienceController as vm">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 translate="EXPERIENCE_TITLE"></h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row text-center" ng-repeat="experience in vm.experiences">
+            <h3 translate="{{experience.role}}"></h3>
+            <h4>{{experience.organization}} ({{experience.time}})</h4>
+        </div>
+    </div>
+</section>

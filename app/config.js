@@ -16,10 +16,10 @@
             ABOUT_ME_TEXT: aboutMeTextEnglish(),
 
             EXPERIENCE_TITLE: 'Experience',
-            EXPERIENCE_1_ROLE: 'Web Developer',
-            EXPERIENCE_2_ROLE: 'Technical Support',
-            EXPERIENCE_3_ROLE: 'Developer (.NET/C#)',
-            EXPERIENCE_4_ROLE: 'Full Stack Developer (.NET/C#)',
+            EXPERIENCE_ROLE_1: 'Web Developer',
+            EXPERIENCE_ROLE_2: 'Technical Support',
+            EXPERIENCE_ROLE_3: 'Developer (.NET/C#)',
+            EXPERIENCE_ROLE_4: 'Full Stack Developer (.NET/C#)',
 
             SKILLS_TITLE: 'Skills',
 
@@ -43,10 +43,10 @@
             ABOUT_ME_TEXT: aboutMeTextPortuguese(),
 
             EXPERIENCE_TITLE: 'Experiência',
-            EXPERIENCE_1_ROLE: 'Desenvolvedor Web',
-            EXPERIENCE_2_ROLE: 'Técnico de Suporte',
-            EXPERIENCE_3_ROLE: 'Desenvolvedor (.NET/C#)',
-            EXPERIENCE_4_ROLE: 'Desenvolvedor Full Stack (.NET/C#)',
+            EXPERIENCE_ROLE_1: 'Desenvolvedor Web',
+            EXPERIENCE_ROLE_2: 'Técnico de Suporte',
+            EXPERIENCE_ROLE_3: 'Desenvolvedor (.NET/C#)',
+            EXPERIENCE_ROLE_4: 'Desenvolvedor Full Stack (.NET/C#)',
 
             SKILLS_TITLE: 'Habilidades',
 

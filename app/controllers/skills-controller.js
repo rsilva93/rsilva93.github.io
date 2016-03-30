@@ -48,7 +48,8 @@
             {
                 technology: 'Gulp / Bower',
                 proficiency: '75%'
-            },
+            }
         ];
+        
     }
 })();
