@@ -1,66 +1,83 @@
-(function () {
+(function() {
     'use strict';
 
     angular.module('rsilva.net.app')
+        .config(routeConfig)
         .config(translateConfig);
+
+    function routeConfig($stateProvider, $urlRouterProvider, $locationProvider) {
+
+        $stateProvider
+            .state('main', {
+                url: '/',
+                templateUrl: 'assets/views/main.html'
+            })
+            .state('profile', {
+                url: '/profile',
+                templateUrl: 'assets/views/profile.html'
+            });
+    }
 
     function translateConfig($translateProvider) {
 
-        $translateProvider.translations('en-US', {
+        $translateProvider
+            .translations('en-US', {
 
-            MY_NAME: 'Robson da Silva',
+                MY_NAME: 'Robson da Silva',
 
-            COVER_MY_TITLE: 'Software Developer',
+                COVER_MY_TITLE: 'Software Developer',
 
-            ABOUT_ME_TITLE: 'About Me',
-            ABOUT_ME_TEXT: aboutMeTextEnglish(),
+                ABOUT_ME_TITLE: 'About Me',
+                ABOUT_ME_TEXT: aboutMeTextEnglish(),
 
-            EXPERIENCE_TITLE: 'Experience',
-            EXPERIENCE_ROLE_1: 'Web Developer',
-            EXPERIENCE_ROLE_2: 'Technical Support',
-            EXPERIENCE_ROLE_3: 'Developer (.NET/C#)',
-            EXPERIENCE_ROLE_4: 'Full Stack Developer (.NET/C#)',
+                EXPERIENCE_TITLE: 'Experience',
+                EXPERIENCE_ROLE_1: 'Web Developer',
+                EXPERIENCE_ROLE_2: 'Technical Support',
+                EXPERIENCE_ROLE_3: 'Developer (.NET/C#)',
+                EXPERIENCE_ROLE_4: 'Full Stack Developer (.NET/C#)',
 
-            SKILLS_TITLE: 'Skills',
+                SKILLS_TITLE: 'Skills',
 
-            FOOTER_LOCATION: 'Location',
-            FOOTER_CITY: 'Blumenau / SC',
-            FOOTER_COUNTRY: 'Brazil',
-            FOOTER_AROUND_THE_WEB: 'Around the Web',
-            FOOTER_CONTACTS: 'Contacts',
-            FOOTER_PHONE: '+55 (47) 9200-1615',
-            FOOTER_EMAIL: 'sc.robson@gmail.com',
-            FOOTER_COPYRIGHT: 'Copyright &copy; rsilva.net 2016'
-        });
+                FOOTER_LOCATION: 'Location',
+                FOOTER_CITY: 'Blumenau / SC',
+                FOOTER_COUNTRY: 'Brazil',
+                FOOTER_AROUND_THE_WEB: 'Around the Web',
+                FOOTER_CONTACTS: 'Contacts',
+                FOOTER_PHONE: '+55 (47) 9200-1615',
+                FOOTER_EMAIL: 'sc.robson@gmail.com',
+                FOOTER_COPYRIGHT: 'Copyright &copy; rsilva.net 2016'
+            });
 
-        $translateProvider.translations('pt-BR', {
+        $translateProvider
+            .translations('pt-BR', {
 
-            MY_NAME: 'Robson da Silva',
+                MY_NAME: 'Robson da Silva',
 
-            COVER_MY_TITLE: 'Desenvolvedor de Software',
+                COVER_MY_TITLE: 'Desenvolvedor de Software',
 
-            ABOUT_ME_TITLE: 'Sobre',
-            ABOUT_ME_TEXT: aboutMeTextPortuguese(),
+                ABOUT_ME_TITLE: 'Sobre',
+                ABOUT_ME_TEXT: aboutMeTextPortuguese(),
 
-            EXPERIENCE_TITLE: 'Experiência',
-            EXPERIENCE_ROLE_1: 'Desenvolvedor Web',
-            EXPERIENCE_ROLE_2: 'Técnico de Suporte',
-            EXPERIENCE_ROLE_3: 'Desenvolvedor (.NET/C#)',
-            EXPERIENCE_ROLE_4: 'Desenvolvedor Full Stack (.NET/C#)',
+                EXPERIENCE_TITLE: 'Experiência',
+                EXPERIENCE_ROLE_1: 'Desenvolvedor Web',
+                EXPERIENCE_ROLE_2: 'Técnico de Suporte',
+                EXPERIENCE_ROLE_3: 'Desenvolvedor (.NET/C#)',
+                EXPERIENCE_ROLE_4: 'Desenvolvedor Full Stack (.NET/C#)',
 
-            SKILLS_TITLE: 'Habilidades',
+                SKILLS_TITLE: 'Habilidades',
 
-            FOOTER_LOCATION: 'Endereço',
-            FOOTER_CITY: 'Blumenau / SC',
-            FOOTER_COUNTRY: 'Brasil',
-            FOOTER_AROUND_THE_WEB: 'Na Web',
-            FOOTER_CONTACTS: 'Contatos',
-            FOOTER_PHONE: '(47) 9200-1615',
-            FOOTER_EMAIL: 'sc.robson@gmail.com',
-            FOOTER_COPYRIGHT: 'Copyright &copy; rsilva.net 2016'
-        });
+                FOOTER_LOCATION: 'Endereço',
+                FOOTER_CITY: 'Blumenau / SC',
+                FOOTER_COUNTRY: 'Brasil',
+                FOOTER_AROUND_THE_WEB: 'Na Web',
+                FOOTER_CONTACTS: 'Contatos',
+                FOOTER_PHONE: '(47) 9200-1615',
+                FOOTER_EMAIL: 'sc.robson@gmail.com',
+                FOOTER_COPYRIGHT: 'Copyright &copy; rsilva.net 2016'
+            });
 
-        $translateProvider.preferredLanguage('pt-BR');
+        $translateProvider.preferredLanguage('en-US');
+        $translateProvider.useSanitizeValueStrategy('escape');
     }
 
     function aboutMeTextEnglish() {
