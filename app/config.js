@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular.module('rsilva.net.app')
@@ -14,9 +14,11 @@
             })
             .state('profile', {
                 url: '/profile',
-                templateUrl: 'assets/views/profile.html'
+                templateUrl: 'assets/views/profile.html',
+                controller: 'profileController',
+                controllerAs: 'vm'
             });
-            
+
         $urlRouterProvider.otherwise('/');
     }
 
