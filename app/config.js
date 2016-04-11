@@ -16,6 +16,8 @@
                 url: '/profile',
                 templateUrl: 'assets/views/profile.html'
             });
+            
+        $urlRouterProvider.otherwise('/');
     }
 
     function translateConfig($translateProvider) {
