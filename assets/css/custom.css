@@ -3,7 +3,7 @@ section#main {
 }
 
 section#profile {
-    padding: 110px;
+    padding-top: 150px;
 }
 
 section#cover {
@@ -13,7 +13,7 @@ section#cover {
 }
 
 section#cover .container {
-  padding-top: 110px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -38,7 +38,7 @@ section#cover .intro-text .skills {
 @media (min-width: 768px) {
   
   section#cover .container {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
   

@@ -41,6 +41,8 @@
                 EXPERIENCE_ROLE_4: 'Full Stack Developer (.NET/C#)',
 
                 SKILLS_TITLE: 'Skills',
+                
+                PROFILE_TITLE: 'Profile',
 
                 FOOTER_LOCATION: 'Location',
                 FOOTER_CITY: 'Blumenau / SC',
@@ -48,8 +50,7 @@
                 FOOTER_AROUND_THE_WEB: 'Around the Web',
                 FOOTER_CONTACTS: 'Contacts',
                 FOOTER_PHONE: '+55 (47) 9200-1615',
-                FOOTER_EMAIL: 'sc.robson@gmail.com',
-                FOOTER_COPYRIGHT: 'Copyright &copy; rsilva.net 2016'
+                FOOTER_EMAIL: 'sc.robson@gmail.com'
             });
 
         $translateProvider
@@ -69,6 +70,8 @@
                 EXPERIENCE_ROLE_4: 'Desenvolvedor Full Stack (.NET/C#)',
 
                 SKILLS_TITLE: 'Habilidades',
+                
+                PROFILE_TITLE: 'Resumo',
 
                 FOOTER_LOCATION: 'Endereço',
                 FOOTER_CITY: 'Blumenau / SC',
@@ -76,8 +79,7 @@
                 FOOTER_AROUND_THE_WEB: 'Na Web',
                 FOOTER_CONTACTS: 'Contatos',
                 FOOTER_PHONE: '(47) 9200-1615',
-                FOOTER_EMAIL: 'sc.robson@gmail.com',
-                FOOTER_COPYRIGHT: 'Copyright &copy; rsilva.net 2016'
+                FOOTER_EMAIL: 'sc.robson@gmail.com'
             });
 
         $translateProvider.preferredLanguage('en-US');
