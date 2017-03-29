@@ -1,38 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Robson da Silva</title>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Robson da silva personal profile site">
-    <meta name="author" content="Robson da Silva">
-    <link href="assets/css/freelancer.min.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <link href="bower_components/bootswatch/flatly/bootstrap.min.css" rel="stylesheet">
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Robson da Silva</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body id="page-top" class="index" ng-app="rsilva.net.app">
+<body id="page-top" class="index">
 
-    <ng-include src="'assets/partials/header.html'"></ng-include>
-    <div ui-view></div>
-    <ng-include src="'assets/partials/footer.html'"></ng-include>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span><i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Robson da Silva</a>
+            </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="bower_components/angular-translate/angular-translate.min.js"></script>
-    <script src="assets/js/classie.js"></script>
-    <script src="assets/js/cbpAnimatedHeader.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/config.js"></script>
-    <script src="app/controllers/cover-controller.js"></script>
-    <script src="app/controllers/skills-controller.js"></script>
-    <script src="app/controllers/experience-controller.js"></script>
-    <script src="app/controllers/profile-controller.js"></script>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#experience">Experience</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Robson da Silva</h1>
+                        <hr class="star-light">
+                        <span class="skills">Software Engineer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Main Skills</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row text-center">
+				<div class="col-lg-4 col-lg-offset-2">
+                    <p>.NET / C#</p>
+					<p>ASP.NET Core / MVC / Web API</p>
+					<p>NodeJS</p>
+					<p>MongoDB</p>
+					<p>NHibernate / SQL Databases</p>
+					<p>Akka.NET</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>AngularJS</p>
+					<p>VueJS</p>
+					<p>JQuery</p>
+					<p>HTML5 / CSS3</p>
+					<p>NPM / Bower</p>
+					<p>Gulp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p style="text-align: justify;">I'm a software engineer and bachelor of computer science. I work in the technology area since 2010 when
+                        I started to learn about software development and got my first job in IT. Over this years I obtained
+                        a large experience and knowledge from the projects I've been involved, mostly related to .NET platform
+                        and web tecnhologies. </p>
+                </div>
+                <div class="col-lg-4">
+                    <p style="text-align: justify;">I like to learn about new technologies and frameworks and I'm always trying to apply it in my code and
+                        projects. About my personal life, I'm a huge fan of Tolkien universe and love to spend my free time
+                        watching some Netflix, listening Spotify or hanging out with my girlfriend and friends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Experience</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row text-center">
+                <h3>Software Engineer</h3>
+                <p>PagueVeloz (2016-now)</p>
+                <h3>Full Stack Developer</h3>
+                <p>Bludata (2015-2016)</p>
+                <h3>.NET Developer</h3>
+                <p>BgmRodotec (2013-2015)</p>
+                <h3>Technical Support</h3>
+                <p>T-Systems (2011-2013)</p>
+                <h3>Web Developer</h3>
+                <p>T-Systems (2010-2011)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Blumenau / SC<br>Brazil</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a target="blank" href="https://br.linkedin.com/in/robson-silva-23967278" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a target="blank" href="https://github.com/rsilva93" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a target="blank" href="https://www.facebook.com/robson.silva.509" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Contacts</h3>
+                        <p>+55 (47) 99200-1615<br>sc.robson@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; rsilva.net
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/freelancer.min.js"></script>
+
 </body>
 
 </html>
